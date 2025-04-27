@@ -14,19 +14,18 @@
 
 
 
-# Структура репозитория
 ```
 ├── models/              # Готовые модели
-│   ├── cnn2d_transformer.pt
-│   ├── cnn2d.pt
-│   └── lstm.pt
+│   ├── cnn2d_transformer.pt 
+│   └── cnn2d.pt
 ├── data/                # Датасет
 │   ├── wav/
 │   ├── txt/
 ├── data_raw/            # Пример необработанных данных
 │   ├── baseband.wav
-├── notebooks/           # Эксперименты
 ├── app/                 # Приложение
+├── notebook.ipynb       # Эксперименты с разными моделями
+├── split_files.py       # скрипт для создания пар сигнал-метка из .wav файла
 └── requirements.txt
 ```
 
