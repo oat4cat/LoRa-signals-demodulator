@@ -8,17 +8,18 @@
 * Гибридная архитектура: CNN + Transformer
 * Адаптивная предобработка: Спектрограммы/FFT с автоматическим паддингом
 
-graph TD
-    A[.wav файл] --> B[Спектрограмма]
-    B --> C[CNN-Transformer]
-    C --> D[JSON]
-    D --> E[интерфейс]
 
+![изображение](https://github.com/user-attachments/assets/9cbbab8a-af50-4765-807d-c27625dfb0a4)
+
+
+
+```
 # Структура репозитория
 
 ├── models/              # Готовые модели
-│   ├── cnn2d_best.pt
-│   └── hybrid.pt
+│   ├── cnn2d_transformer.pt
+│   ├── cnn2d.pt
+│   └── lstm.pt
 ├── data/                # Датасет
 │   ├── wav/
 │   ├── txt/
@@ -27,5 +28,5 @@ graph TD
 ├── notebooks/           # Эксперименты
 ├── app/                 # Приложение
 └── requirements.txt
-
+```
 
