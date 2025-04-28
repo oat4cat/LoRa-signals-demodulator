@@ -14,10 +14,17 @@
 # Для запуска проекта (app)
 
 ```
-pip install -r requirements.txt
+# 1. Клонируем репозиторий в sparse-режиме (только нужные файлы)
+gh repo clone oat4cat/lora_signals_demodulator -- --sparse
+cd lora_signals_demodulator
 
-# Декодирование
-python final.py
+# 2. Указываем, какие файлы/папки нужны
+git sparse-checkout init --cone  # включаем режим "cone" для работы с путями
+git sparse-checkout set app/ requirements.txt
+
+# 3. Устанавливаем зависимости и запускаем приложение
+pip install -r requirements.txt
+python app/final.py
 ```
 
 # Структура репозитория
