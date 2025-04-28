@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python final.py
 ```
 
-
+# Структура репозитория
 
 ```
 ├── models/              # Готовые модели
@@ -28,9 +28,10 @@ python final.py
 │   └── cnn2d.pt
 ├── data/                # Датасет
 │   ├── wav/
-│   ├── txt/
+│   └── txt/
 ├── data_raw/            # Пример необработанных данных
 │   ├── baseband.wav
+│   └── decoded.txt
 ├── app/                 # Приложение
 ├── notebook.ipynb       # Эксперименты с разными моделями
 ├── split_files.py       # скрипт для создания пар сигнал-метка из .wav файла
