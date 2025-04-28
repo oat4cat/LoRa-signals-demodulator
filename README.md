@@ -8,9 +8,17 @@
 * Гибридная архитектура: CNN + Transformer
 * Адаптивная предобработка: Спектрограммы/FFT с автоматическим паддингом
 
-
 ![изображение](https://github.com/user-attachments/assets/9cbbab8a-af50-4765-807d-c27625dfb0a4)
 
+
+# Для запуска проекта (app)
+
+```
+pip install -r requirements.txt
+
+# Декодирование
+python final.py
+```
 
 
 
