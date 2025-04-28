@@ -22,6 +22,12 @@ cd LoRa-signals-demodulator
 git sparse-checkout init --cone  # включаем режим "cone" для работы с путями
 git sparse-checkout set app/ requirements.txt
 
+# 3. Создаем виртуальное окружение (Python 3.8+) и активируем его
+python -m venv venv           # создает папку venv с изолированным Python
+# source venv/bin/activate      # Linux/Mac
+.\venv\Scripts\activate       # Windows (Cmd/PowerShell)
+
+
 # 3. Устанавливаем зависимости и запускаем приложение
 pip install -r requirements.txt
 python app/final.py
