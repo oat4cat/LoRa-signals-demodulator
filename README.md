@@ -8,11 +8,19 @@
 * Гибридная архитектура: CNN + Transformer
 * Адаптивная предобработка: Спектрограммы/FFT с автоматическим паддингом
 
-
 ![изображение](https://github.com/user-attachments/assets/9cbbab8a-af50-4765-807d-c27625dfb0a4)
 
 
+# Для запуска проекта (app)
 
+```
+pip install -r requirements.txt
+
+# Декодирование
+python final.py
+```
+
+# Структура репозитория
 
 ```
 ├── models/              # Готовые модели
@@ -20,9 +28,10 @@
 │   └── cnn2d.pt
 ├── data/                # Датасет
 │   ├── wav/
-│   ├── txt/
+│   └── txt/
 ├── data_raw/            # Пример необработанных данных
 │   ├── baseband.wav
+│   └── decoded.txt
 ├── app/                 # Приложение
 ├── notebook.ipynb       # Эксперименты с разными моделями
 ├── split_files.py       # скрипт для создания пар сигнал-метка из .wav файла
