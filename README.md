@@ -15,8 +15,8 @@
 
 ```
 # 1. Клонируем репозиторий в sparse-режиме (только нужные файлы)
-gh repo clone oat4cat/lora_signals_demodulator -- --sparse
-cd lora_signals_demodulator
+gh repo clone oat4cat/LoRa-signals-demodulator -- --sparse
+cd LoRa-signals-demodulator
 
 # 2. Указываем, какие файлы/папки нужны
 git sparse-checkout init --cone  # включаем режим "cone" для работы с путями
