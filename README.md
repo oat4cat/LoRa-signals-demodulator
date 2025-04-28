@@ -15,12 +15,10 @@
 
 ```
 # 1. Клонируем репозиторий в sparse-режиме (только нужные файлы)
-gh repo clone oat4cat/LoRa-signals-demodulator -- --sparse
+git clone --filter=blob:none --sparse https://github.com/oat4cat/LoRa-signals-demodulator
 cd LoRa-signals-demodulator
-
-# 2. Указываем, какие файлы/папки нужны
-git sparse-checkout init --cone  # включаем режим "cone" для работы с путями
-git sparse-checkout set app/ requirements.txt
+git sparse-checkout init --cone
+git sparse-checkout set app/
 
 # 3. Создаем виртуальное окружение (Python 3.8+) и активируем его
 python -m venv venv           # создает папку venv с изолированным Python
